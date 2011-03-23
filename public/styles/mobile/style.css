@@ -1,0 +1,144 @@
+/*======================================
+THEME NAME:
+THEME URI:
+DESCRIPTION:
+CODENAME:
+VERSION:
+AUTHOR:
+AUTHOR URI:
+LAST DATE MODIFIED:
+STYLE NAME:
+======================================*/
+
+/* Import external stylesheet */
+@import url('reset.css');
+
+/* Common HTML tags */
+body
+{
+	background:#fff;
+	font: 76%/115% georgia,verdana,arial;
+	text-align:left;
+	line-height:20px;
+	color:#444;
+}
+
+/* Wrapper & Container */
+#wrapper
+{
+	width:100%;
+}
+
+
+/* Header */
+#header
+{
+	height:50px;
+	background:#e4edf2;
+	border-bottom:2px solid #eee;
+	padding:7px 0 0 10px;
+	
+}
+
+#header h1, #header p
+{
+	text-indent:-9999px;
+}
+
+.page
+{
+	background:#000;
+	padding:3px 15px;
+	font-weight:bold;
+	font-family:arial,georgia,verdana;
+	margin-bottom:10px;
+}
+
+.page a {color:#149ed3; margin-right:5px;}
+
+.page strong {color:#eee; margin-right:5px;}
+
+/* Navigation */
+
+#navigation ul li
+{
+	margin-left:15px;
+	padding:1px 0;
+	font-family:arial,georgia,verdana;
+	font-weight:bold;
+	font-size:1.1em;
+}
+
+#navigation ul li a
+{
+	display:block;
+}
+
+a
+{
+	color:#009999;
+}
+
+/* Content */
+#content
+{
+	/*background:transparent url(images/content-bg.png) repeat-y;*/
+}
+
+h2
+{
+	background:#000;
+	color:#fff;
+	padding:3px 10px 3px 15px;
+	font-weight:bold;
+	letter-spacing:1px;
+	font-size:1em;
+}
+
+.entry-title a
+{
+	font-family:arial,georgia,verdana;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.hentry
+{
+	padding:10px 15px;
+}
+
+.hentry a
+{
+	color:#149ed3;
+	text-decoration:underline;
+}
+
+.hentry a:hover
+{
+	color:#754c24;
+}
+
+.alt
+{
+	background:#f6f6f4;
+}
+
+
+
+abbr
+{
+	color:#999;
+}
+
+
+/* Footer */
+#footer
+{
+	padding:5px 15px;
+	margin-top:10px;
+	background:#f8f8f8;
+	border-top:2px solid #eee;
+}
+
+
+/* End Of File */

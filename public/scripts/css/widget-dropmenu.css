@@ -1,0 +1,37 @@
+.widget-dropmenu { 
+	display: block; 
+	margin: 0; 
+	padding: 0;
+	height: 24px;
+}
+.widget-dropmenu li { 
+	display: block; 
+	list-style: none; 
+	margin: 0; 
+	padding: 0 3px 0 0; 
+	float: left; 
+	position: relative; 
+	
+}
+.widget-dropmenu a { display: block; text-decoration: none; }
+.widget-dropmenu li a { color: #5c75aa; padding: 3px 10px; position: relative; }
+.widget-dropmenu li a.current, .widget-dropmenu li a:hover { background: #5c75aa; color: #fff; }
+.widget-dropmenu ul { 
+	display: none; 
+	position: absolute; 
+	left: 0; 
+	margin: 0; 
+	padding: 0px 0;
+	width: 200px;
+	border: 1px solid #5c75aa;
+	font-weight: normal;
+	z-index: 100;
+	background: #fff; 
+}
+
+* html .widget-dropmenu ul { line-height: 0; } /* IE6 "fix" */
+.widget-dropmenu ul a { zoom: 1; } /* IE6/7 fix */
+.widget-dropmenu ul li { float: none; }
+.widget-dropmenu ul ul { top: 0; }
+.widget-dropmenu ul ul { left: 200px; }
+.widget-dropmenu ul li { width: 100%; float: left; }			

@@ -1,0 +1,373 @@
+/*======================================
+CODENAME: FeedMalaya
+VERSION:1.1
+AUTHOR:Crynobone & Bat InfoMalaya
+LAST DATE MODIFIED: 23 June 2009
+STYLE NAME: Master stylesheet
+======================================*/
+
+/* Import external stylesheet */
+@import url('reset.css');
+
+/* Common HTML tags */
+body
+{
+	background:#ebf4fa;
+	font: 76%/115% georgia,verdana,arial;
+	text-align:left;
+	line-height:20px;
+	color:#444;
+}
+
+/* Wrapper & Container */
+#wrapper
+{
+	width:860px;
+	margin:0 auto;
+}
+
+
+/* Header */
+#header
+{
+	background:#e4edf2 url(images/logo.png) no-repeat 10px;
+	height:120px;
+	margin:30px 0;
+	padding-left:30px;
+}
+
+#header h1
+{
+	text-indent:-9999px;
+}
+
+#header h1 a
+{
+	display:block;
+	width:245px;
+	height:120px;
+}
+
+#header p
+{
+	float:right;
+	font-size:1.2em;
+	line-height:normal;
+	width:540px;
+	margin-top:-92px;
+	line-height:150%;
+	color:#9f9383;
+	font-weight:bold;
+	font-family:arial,georgia,verdana;
+}
+
+/* Navigation */
+#navigation
+{
+	width:860px;
+	height:30px;
+	background:#fff url(images/bg-navi.png) no-repeat;
+	border:1px solid #ccc;
+	margin-top:-1px;
+}
+
+#navigation ul > li
+{
+	display:inline;
+	float:right;
+	font-size:1.1em;
+	font-weight:bold;
+	padding:5px 0 5px 0;
+	font-family:arial,georgia,verdana;
+	margin-right:15px;
+	position: relative;
+}
+
+#header h1 a, #navigation ul li a
+{
+	color:#fff;
+}
+
+* html #navigation ul ul 
+{
+	line-height: 0;
+}
+
+#navigation ul ul {
+	display: none;
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #149ed3;
+	left: 0;
+	margin: 0;
+	padding: 3px 0;
+	position: absolute;
+	width: 150px;
+}
+#navigation ul ul li {
+	display: block;
+	float: none;
+	padding: 2px 0px;
+	font-size: 0.9em;
+}
+
+#navigation ul ul li a {
+	color: #FFFFFF;
+	display: block;
+	padding: 3px 10px;
+	position: relative;
+	text-decoration: none;
+}
+#navigation ul ul li a.current, #navigation ul ul li a:hover { background: #149ed3; color: #FFF; }
+
+#navigation ul ul ul {
+	left: 150px;
+}
+#navigation ul ul ul {
+	top: 0;
+}
+#navigation ul li ul li {
+	display: block;
+	float: none;
+	width: 150px;
+}
+#navigation ul li ul li a {
+	background: #FFFFFF none repeat scroll 0 0;
+	color: #149ed3;
+}
+
+/* Content */
+
+#content
+{
+	width:520px;
+	float:left;
+	background:#f5f5f5;
+	border:1px solid #e1e3e1;
+	padding:15px 20px 10px 20px;
+}
+
+#post img
+{
+	float:left;
+	margin:0 10px 5px 0;
+}
+
+.small
+{
+	font-family:arial,georgia,verdana;
+	text-transform:uppercase;
+	font-size:0.8em;
+	color:#999;
+}
+
+h2
+{
+	letter-spacing:1px;
+	font-size:1em;
+	border-bottom:1px solid #e4ddd3;
+	padding-bottom:10px;
+	color:#754c24;
+}
+
+h2 em
+{
+	font-weight:normal;
+}
+
+.hentry ul li
+{
+	border-top:1px solid #fff;
+	border-bottom:1px solid #e4ddd3;
+	padding:10px 0 15px 0;
+}
+
+.hentry h3
+{
+	font-family:arial,georgia,verdana;
+	font-size:1.6em;
+	line-height:normal;
+}
+
+.hentry p
+{
+	color:#666;
+}
+
+.hentry a, .page a, #header p a, .widget a, #footer a, .facebook a
+{
+	color:#149ed3;
+}
+
+.hentry a:hover, #header p a:hover, .widget a:hover, #footer a:hover, .facebook a:hover, .page a:hover
+{
+	color:#754c24;
+}
+
+#navigation a:hover
+{
+	color:#eae9e9;
+}
+
+.page a
+{
+	padding:2px 5px;
+}
+
+.page strong
+{
+	margin-right:3px;
+	color:#754c24;
+}
+
+p.excerpt
+{
+	color:#666;
+	margin:5px 0;
+}
+
+.category
+{
+	margin-top:5px;
+}
+
+.category strong
+{
+	font-weight:normal;
+}
+
+.tags
+{
+	font-family:arial,georgia,verdana;
+	text-align:justify;
+}
+
+/* Sidebar */
+#sidebar
+{
+	width:230px;
+	float:right;
+	background:#f5f5f5;
+	border:1px solid #e1e3e1;
+	padding:15px 20px;
+}
+
+.widget
+{
+	margin-bottom:30px;
+}
+
+.widget-content
+{
+	border-top:1px solid #fff;
+	padding:10px 0;
+	margin-bottom:30px;
+}
+
+.facebook
+{
+	width:230px;
+	float:right;
+	background:#f5f5f5;
+	border:1px solid #e1e3e1;
+	padding:15px 20px;
+	height:50px;
+	margin-bottom:25px;
+}
+
+.facebook img
+{
+	float:left;
+	margin:0 10px 15px 0;
+	clear:left;
+}
+
+.facebook p
+{
+	line-height:150%;
+}
+
+.mobile img
+{
+	margin-top:5px;
+}
+
+.mobile a
+{
+	padding:0;
+}
+
+.page
+{
+	padding:10px 10px 3px 0;
+	font-weight:normal;
+	font-family:arial,georgia,verdana;
+	font-weight:bold;
+	font-size:1.1em;
+	color:#000;
+	border-top:1px solid #fff;
+}
+
+/* Helpers */
+
+.item_comment
+{
+	background:transparent url(images/balloon_small_left.png) no-repeat 0 -1px;
+	padding-left:15px;
+}
+
+.item_share
+{
+	background:transparent url(images/plus_small_circle.png) no-repeat 0 -1px;
+	padding-left:15px;
+}
+
+.item_like
+{
+	background:transparent url(images/heart_small.png) no-repeat 0 -2px;
+	padding-left:15px;
+	height:16px;
+}
+
+.item_hide
+{
+	background:transparent url(images/minus_small_circle.png) no-repeat 0 -1px;
+	padding-left:15px;
+}
+
+.item_people
+{
+	background:transparent url(images/heart__plus.png) no-repeat  left;
+	padding-left:20px;
+}
+
+/* User profile */
+.user-profile
+{
+	padding-top:15px;
+	border-top:1px solid #fff;
+}
+
+h4
+{
+	letter-spacing:1px;
+	font-size:1em;
+	border-bottom:1px solid #e4ddd3;
+	padding-bottom:10px;
+	color:#754c24;
+	margin-top:20px;
+}
+
+/* Footer */
+#footer
+{
+	padding:20px 21px;;
+	color:#754c24;
+}
+
+/* Positioning */
+.left				{float:left;}
+.right				{float:right;}
+.clear				{clear:both;}
+
+
+/* End Of File */

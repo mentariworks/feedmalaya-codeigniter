@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{{PAGE-TITLE}}</title>
+	<link href="{{STYLE-URI}}style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="{{SCRIPT-URI}}css/all.css" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="{{SCRIPT-URI}}jquery.min.js"></script>
+	<script type="text/javascript" src="{{SCRIPT-URI}}savvyui.min.js"></script>
+	<script type="text/javascript" src="{{SCRIPT-URI}}plugin.js"></script>
+	<script type="text/javascript" src="{{SCRIPT-URI}}flexigrid.min.js"></script>
+	<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+	<link rel="alternate" type="application/rss+xml" title="{{TITLE}}" href="{{INDEX-URI}}main/api/rss" />
+</head>
+
+<body>
+
+	<div id="wrapper"><!-- Begin wrapper -->
+	
+		<div id="navigation"><!-- Begin navigation -->
+			{{NAVIGATION}}
+		</div><!-- End navigation -->
+		
+		<hr />
+			
+		<div id="header"><!-- Begin header -->
+		
+			<h1><a href="{{INDEX-URI}}">{{TITLE}}</a></h1>
+			<p>FeedMalaya is a social blog aggregator that pull out the best content from Malaysian bloggers. Dig more about <a href="http://feedmalaya.com/page/our-mission">our mission</a>, follow us on <a href="http://twitter.com/feedmalaya">twitter</a>, or <a class="nav-suggest" href="#suggest">suggest</a> us the blog that your think deserve to be here.</p>
+		
+		</div><!-- End header -->
+		
+		<hr />
+		
+		<div id="page"><!-- Begin content -->
+			{{CONTENT}}
+		</div><!-- End content -->
+		
+		<hr />
+		
+		<div class="clear"></div>
+		
+		<hr />
+		
+		<div id="footer"><!-- Begin footer -->
+			<p class="small">A project by <a href="http://crynobone.com">Mior Muhammad Zaki</a> &amp; <a href="http://mohdhuzairy.blogspot.com">Mohd Huzairy</a></p>
+		</div><!-- End footer -->
+	
+	</div><!-- End Wrapper -->
+
+<script type="text/javascript">
+<!--
+
+Js.data.suggest = {
+	dialog: null,
+	init: function() {
+		Js.data.suggest.dialog = new Js.widget.dialog({
+			element: 'suggestion-site',
+			title: 'Suggest a site',
+			width: 400,
+			content: '<p>Loading...</p>'
+		});
+	
+		Js.data.suggest.dialog.content.load( '{{INDEX-URI}}suggest/index' );
+	}
+};
+Js.data.activeContent = Js.util.activeContent.extend({
+	repeat: true,
+	init: function(i) {
+		if(i[0] == 'suggest' ) {
+			Js.data.suggest.init();
+		}
+	}
+});
+
+
+Js.$(function($) {
+	FB_RequireFeatures(["Api","XFBML"], function(){ 
+		FB.Facebook.init("{{MODULE-FACEBOOK-APIKEY}}", "/xd_receiver.htm", {"reloadIfSessionStateChanged":true});
+	});
+	new Js.data.activeContent({
+		element: '#wrapper .nav-suggest'
+	});
+	
+	$('#fb-login-button').click(function() {
+		FB.Connect.requireSession( function() { window.location='{{INDEX-URI}}'; } );
+		return false;
+	});
+	
+	new Js.widget.dropmenu("#nav-ul");
+});
+-->
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9170846-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

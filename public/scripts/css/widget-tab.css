@@ -1,0 +1,61 @@
+.tab-toolbar-container { 
+	margin: 15px 0 0; 
+	border-bottom: 1px solid #D3DAE8; 
+	height: 28px;
+	line-height: 16px;
+}
+ul.tab-toolbar { 
+	list-style: none; 
+	margin: 0;
+	padding: 0; 
+}
+ul.tab-toolbar li { 
+	display: block; 
+	float: left; 
+	margin: 0 2px; 
+	padding: 0; 
+}
+ul.tab-toolbar li a { 
+	display: block; 
+	font-weight: 600; 
+	background: #D8DFEA; 
+	color: #3B5998; 
+	padding: 4px 10px 6px; 
+	border-bottom: 1px solid #D8DFEA; 
+	outline: none; 
+	text-decoration: none; 
+}
+ul.tab-toolbar li a.disabled { 
+	display: block; 
+	font-weight: 600; 
+	background: #aaa; 
+	color: #fff; 
+	padding: 4px 10px 6px; 
+	border-bottom: 1px solid #aaa; 
+	outline: none; 
+	text-decoration: none; 
+}
+ul.tab-toolbar li a.disabled:hover { 
+	display: block; 
+	background: #aaa; 
+	color: #fff; 
+	border-bottom: 1px solid #aaa; 
+}
+ul.tab-toolbar li a.current, ul.tab-toolbar li a.current:hover { 
+	display: block; 
+	background: #fff; 
+	color: #333; 
+	border: 1px solid #D3DAE8; 
+	border-bottom: 1px solid #fff; 
+}
+ul.tab-toolbar li a:hover { 
+	display: block; 
+	background: #3B5998; 
+	color: #fff; 
+	border-bottom: 1px solid #3B5998; 
+}
+.tab-hidden, .tab-active { 
+	display: block;
+	clear: left;
+	padding: 15px 5px 5px; 
+}

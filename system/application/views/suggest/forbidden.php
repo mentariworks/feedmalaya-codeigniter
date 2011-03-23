@@ -1,0 +1,1 @@
+<p>You have to login before submitting a suggestion, thank you.</p>

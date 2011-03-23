@@ -1,0 +1,19 @@
+/**
+ * Include all Cascading Style Sheet designed for Savvy.UI
+ * @author Mior Muhammad Zaki crynobone@gmail.com
+ */
+
+/* Import Js.ext */
+@import "ext-form.css";
+
+/* Import Js.widget */
+@import "widget-activity.css";
+@import "widget-datepicker.css";
+@import "widget-dropmenu.css";
+@import "widget-notice.css";
+@import "widget-panel.css";
+@import "widget-tab.css";
+
+/* Other stuff */
+@import "form.css";
+@import "flexigrid.css";

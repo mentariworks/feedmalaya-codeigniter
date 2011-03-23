@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>{{PAGE-TITLE}}</title>
+		<link href="{{STYLE-URI}}style.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="{{SCRIPT-URI}}css/all.css" media="all" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="{{SCRIPT-URI}}jquery.min.js"></script>
+		<script type="text/javascript" src="{{SCRIPT-URI}}savvyui.js"></script>
+		<script type="text/javascript" src="{{SCRIPT-URI}}plugin.js"></script>
+		<script type="text/javascript" src="{{SCRIPT-URI}}flexigrid.pack.js"></script>
+		<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+		<link rel="alternate" type="application/rss+xml" title="{{TITLE}}" href="{{INDEX-URI}}main/api/rss" />
+	</head>
+	<body>
+		<div id="wrapper">
+			
+			<div id="navigation">		
+				{{NAVIGATION}}
+			</div>
+			
+			<div id="header">
+				<h1><a href="{{INDEX-URI}}">{{TITLE}}</a></h1>
+				<p>FeedMalaya is a social blog aggregator that pull out the best content from Malaysian bloggers. Dig more about our <a href="{{INDEX-URI}}page/our-mission">mission</a>, follow us on <a href="http://twitter.com/feedmalaya">twitter</a>, or <a href="#suggest" class="nav-suggest">suggest</a> us the blog that your think deserve to be here.</p>
+				<div class="clear"></div>
+			</div>
+			
+		<div id="content">
+			{{CONTENT}}
+		</div>
+		
+		<div id="sidebar">
+			{{SIDEBAR}}
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div><!-- End Wrapper -->
+	
+	<div id="footer"><!-- Begin footer -->
+		<div id="footer-content">
+			<p>Created <em>by</em> Malaysian, <em>for</em> Malaysian.
+		</div>
+	</div>
+		
+		<script type="text/javascript">
+		<!--
+		FB.init("{{MODULE-FACEBOOK-APIKEY}}", "/xd_receiver.htm");
+		
+		Js.data.suggest = {
+			dialog: null,
+			init: function() {
+				Js.data.suggest.dialog = new Js.widget.dialog({
+					element: 'suggestion-site',
+					title: 'Suggest a site',
+					width: 400,
+					content: '<p>Loading...</p>'
+				});
+			
+				Js.data.suggest.dialog.content.load( '{{INDEX-URI}}suggest/index' );
+			}
+		};
+		Js.data.activeContent = Js.util.activeContent.extend({
+			repeat: true,
+			init: function(i) {
+				if(i[0] == 'suggest' ) {
+					Js.data.suggest.init();
+				}
+			}
+		});
+
+		
+		Js.$(function($) {
+			new Js.data.activeContent({
+				element: '#wrapper .nav-suggest'
+			});
+			
+			new Js.widget.dropmenu("#nav-ul");
+		});
+		-->
+		</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9170846-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	</body>
+</html>

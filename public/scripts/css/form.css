@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+form {}
+fieldset { border: 1px solid #fff; float: left; font-size: 13px; margin: 5px 0 15px; padding: 10px; width: 96%; }
+fieldset.compact { border: none; }
+fieldset div.clear { clear: both; }
+fieldset div.panel { float: left; width: 99%; clear: both; }
+fieldset div.panel label strong { color: red; font-weight: bold; }
+div.panel em { clear: left; display: block; font-size: 11px; color: #999; margin: 4px 0 4px; font-style: normal; }
+fieldset div.col-2 { clear: none; width: 49%; }
+fieldset div.col-2f { clear: left; width: 49%; }
+legend { color: #1E3B78; font-size: 14px; font-family: Tahoma, Arial, Helvetica, sans-serif; line-height: normal; padding: 0 5px; }
+label { display: block; clear: left; font-weight: bold; font-family: Tahoma, Arial, Helvetica, sans-serif; padding: 8px 0 4px; color: #3B3B3B;  }
+		
+input, select, textarea { border: 1px solid #ccc; padding: 4px; }
+input.long, select.long, textarea.long { width: 95%; }
+input.medium, select.medium, textarea.medium { width: 45%; }
+input.short, select.short, textarea.short { width: 20%; }
+input.small, select.small, textarea.small { width: 15%; }
+
+span.float-right { display: block; float: right; }
+span.checkbox { display: block; width: auto; padding: 3px 0; }
+span.col-2 { display: block; float: left; width: 49%; padding: 3px 0; }
+span.col-3 { display: block; float: left; width: 32%; padding: 3px 0; }
+span.col-4 { display: block; float: left; width: 24%; padding: 3px 0; }
+span.checkbox label { display: inline; font-weight: normal; padding: 0px; font-size: 13px; font-family: Arial, Helvetica, sans-serif; }
+
+div.button { display: block; float: left; width: 99%; margin: 15px 0 2px; }
+div.button input { background: #595959; color: #fff; border: none; margin-right: 5px; font-size: 13px; font-weight: 600; }
+div.button a { display: block; float: left; padding: 5px 10px; font-weight: 600; font-size: 13px; background: #595959; text-decoration: none; color: #fff; border: none; margin-right: 5px; }
+div.button .cancel { background: #850005; color: #fff; border: none; margin-right: 5px; }
+div.button .link { background: #039; color: #fff; border: none; margin-right: 5px; font-weight: 600; font-size: 13px; }
+		
+.full-submit {
+	display: block; 
+	background-color: #f4f4f4; 
+	margin: 35px 0 20px; 
+	padding: 10px 20px; 
+	border: 1px solid #999; 
+	float: none; 
+	width: auto; 
+	clear: both; 
+	height: 30px;
+}
+.full-submit input { float: left; }
+.extform-errormessage { width: auto; padding: 2px 5px; display: block; float: left; margin: 3px 0; background: #ffc; border: 1px solid #ff6; color: #900; font-size: 11px; }
+
+
+iframe.uploader { border: 0; outline: 0; height: 60px; }
+iframe.hidden { display: none; }
+.listing { line-height: 20px; }
+.column { float: left; width: 49%; }
+		

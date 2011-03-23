@@ -1,0 +1,30 @@
+.widget-panel .calendar-body {
+	width: 100%;
+	text-align: center;
+	
+}
+.widget-panel .calendar-header-day {
+	font-weight: bold;
+}
+.widget-panel .calendar-body td {
+	padding: 2px 1px;
+}
+.widget-panel .calendar-day-selected {
+	background: #336699;
+	color: #fff;
+}
+.widget-panel .calendar-content, .widget-panel .calendar-option {
+	padding: 5px 3px 10px;
+	background: #fff;
+	font-size: 11px;
+}
+
+.widget-panel .calendar-content .prev-month {
+	cursor: pointer;
+	float: left;
+}
+
+.widget-panel .calendar-content .next-month {
+	cursor: pointer;
+	float: right;
+}
